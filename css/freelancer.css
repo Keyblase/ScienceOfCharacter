@@ -10595,7 +10595,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: #2c3e50;
+  background-color: #ffffff;
   border-radius: 1rem;
   border-color: #2c3e50 !important;
 }
@@ -10609,7 +10609,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .divider-custom .divider-custom-icon {
-  color: #2c3e50 !important;
+  color: #ffffff !important;
   font-size: 2rem;
 }
 
@@ -10874,6 +10874,18 @@ form .row:first-child .floating-label-form-group {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #02686B;
+  color: #fff;
+}
+.mostrarDrop {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #02686B;
+  color: #fff;
+}
+.mostrarDrag {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #37A9AD;
   color: #fff;
 }
 

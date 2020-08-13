@@ -21,19 +21,20 @@
 
   <style>
     #dragable {
-      width: 80%;
+      width: 100%;
+      height: 500px;
     }
   </style>
 
 </head>
 
-<body id="page-top">
+<body id="page-top" style="background-color: #2c3e50;">
 
   <!-- Portfolio Section -->
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Ciência do Personagem</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Ciência do Personagem</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -51,7 +52,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mb-5 mb-lg-0">
-          <p class="font-italic font-weight-bold">
+          <p class="font-italic font-weight-bold" >
             <strong>CIÊNCIA DO PERSONAGEM</strong> é um documentário de Tiffany Shlain, 
             revela como é possível para qualquer pessoa construir seus principais pontos 
             fortes de caráter e usá-los para alcançar maior sucesso pessoal,
@@ -1153,21 +1154,136 @@
   </section>
 
   <!-- Call To Action -->
-  <section class="copyright py-4 text-center text-white">
+  <section class="copyright py-4 text-center text-white" >
     <div class="container">
       <h3>Com Base na explicação , escolha 3 pontos fortes sobre você ^^</h3>
     </div>
+
+    <div class="btn-group col-6 col-md-3 col-lg-1">
+      <button type="button" onclick="MostrarTodasPersonalidadeDeUmaArea('sabedoria')" class="btn btn-info">Sabedoria</button>
+      <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item disabled" >Personalidade</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('criatividade')">Criatividade</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('curiosidade')" >Curiosidade</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('amorPorAprender')" >Amor Por Aprender</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('Perspectiva')" >Perspectiva</a>
+  
+      </div>
+    </div>
+  
+    <div class="btn-group col-6 col-md-3 col-lg-1">
+      <button type="button" onclick="MostrarTodasPersonalidadeDeUmaArea('coragem')" class="btn btn-info">Coragem</button>
+      <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item disabled" >Personalidade</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('bravura')" >Bravura</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('entusiamo')" >Entusiamo</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('honestidade')" >Honestidade</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('perseveranca')" >Perseverança</a>
+      </div>
+    </div>
+  
+    <div class="btn-group col-6 col-md-3 col-lg-1">
+      <button type="button" onclick="MostrarTodasPersonalidadeDeUmaArea('humanidade')" class="btn btn-info">Humanidade</button>
+      <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item disabled" >Personalidade</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('amor')" >Amor</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('bondade')" >Bondade</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('inteligenciaSocial')" >Inteligência Social</a>
+      </div>
+    </div>
+  
+    <div class="btn-group col-6 col-md-3 col-lg-1">
+      <button type="button" onclick="MostrarTodasPersonalidadeDeUmaArea('justica')" class="btn btn-info">Justiça</button>
+      <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item disabled" >Personalidade</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('justo')" >Justo</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('lideranca')" >Liderança</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('responsabilidadeSocial')" >Responsabilidade Social</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('trabalhoEmEquipe')" >Trabalho em Equipe</a>
+      </div>
+    </div>
+  
+    <div class="btn-group col-6 col-md-3 col-lg-1">
+      <button type="button" onclick="MostrarTodasPersonalidadeDeUmaArea('temperanca')" class="btn btn-info">Temperança</button>
+      <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item disabled" >Personalidade</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('autoControle')" >AutoControle</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('humildade')" >Humildade</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('perdao')" >Perdão</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('prudencia')" >Prudência</a>
+      </div>
+    </div>
+  
+    <div class="btn-group col-6 col-md-3 col-lg-1">
+      <button type="button" onclick="MostrarTodasPersonalidadeDeUmaArea('transcedencia')" class="btn btn-info">Trancedência</button>
+      <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item disabled" >Personalidade</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('apreciacaoPeloBelo')" >Apreciação pelo Belo</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('espiritualidade')" >Espiritualidade</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('gratidao')" >Gratidão</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('humor')" >Humor</a>
+        <a class="dropdown-item" onclick="MostrarPersonalidade('otimismo')" >Otimismo</a>
+  
+      </div>
+    </div>
+
   </section>
 
+    
+    <div class="row" style="background-color: #02686B;">
+              
+      <!-- Our drop Area -->
+        <div class="col-lg-4 mostrarDrop " id="dragable" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <h4 class="text-center"> Insira uma Foto Abaixo </h2>
+            
+            <div class="text-center">
+              <div class="custom-file">
+                <input type="file"type='file' onchange="readURL(this);" class="custom-file-input btn btn-info custom-file" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Clique e Escolha uma Foto</label>
+              </div>
+  
+            <img id="blah" class="imgUnica " src="http://placehold.it/600x340" style="max-width: 600px; max-height: 340px;" alt="Sua Imagem" />
+           
+            </div>
+            
 
-    <div class="row">
-       
-      
+        </div>
+        <div class="col-lg-2 mostrarDrag text-center " id="dragableOne" ondrop="drop(event)" ondragover="allowDrop(event)"> <h6> Arraste aqui sua 1º Qualidade</h6> </div>
+        <div class="col-lg-2 mostrarDrop text-center" id="dragableTwo" ondrop="drop(event)" ondragover="allowDrop(event)"><h6> Arraste aqui sua 2º Qualidade</h6></div>
+        <div class="col-lg-2 mostrarDrag text-center " id="dragableThree" ondrop="drop(event)" ondragover="allowDrop(event)"><h6> Arraste aqui sua 3º Qualidade</h6></div>
+
+        <!--/ Our drop Area-->
+        
       <!-- 1º row -->
-      <div class="row">
 
-        <div class="col-3 col-md-3 col-lg-1" id="criatividade" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+      <div hidden="true" id="sabedoria">
+
+        <div class="col-3 col-md-3 col-lg-12" id="criatividade" draggable="true" ondragstart="drag(event)" >
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1177,8 +1293,8 @@
           </div>
         </div>
   
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="curiosidade" draggable="true" ondragstart="drag(event)" >
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1188,8 +1304,8 @@
           </div>
         </div>
   
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="amorPorAprender" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1198,9 +1314,27 @@
             <img class="img-fluid" src="img/Sabedoria/AmorPorAprender.png" alt="">
           </div>
         </div>
+
+        <div class="col-3 col-md-3 col-lg-12" id="perspectiva" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <p> Arrastar</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/Sabedoria/Perspectiva.png" alt="">
+          </div>
+        </div>
   
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+      </div>
+      <!--/1º row-->
+
+      <!-- 2º row -->
+      
+      <div id="coragem" hidden="true">
+              
+        <div class="col-3 col-md-3 col-lg-12" id="bravura" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1209,8 +1343,8 @@
             <img class="img-fluid" src="img/Coragem/Bravura.png" alt="">
           </div>
         </div>
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="entusiasmo" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1219,8 +1353,8 @@
             <img class="img-fluid" src="img/Coragem/entusiasmo.png" alt="">
           </div>
         </div>
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="honestidade" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1229,8 +1363,8 @@
             <img class="img-fluid" src="img/Coragem/honestidade.png" alt="">
           </div>
         </div>
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="perseveranca" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1239,8 +1373,17 @@
             <img class="img-fluid" src="img/Coragem/perseverança.png" alt="">
           </div>
         </div>
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        
+        
+      </div>
+
+      <!--/ 2º row -->
+
+      <!-- 3º row -->
+      <div id="humanidade" hidden="true">
+
+        <div class="col-3 col-md-3 col-lg-12" id="amor" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1250,8 +1393,8 @@
           </div>
         </div>
   
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="bondade" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1261,8 +1404,8 @@
           </div>
         </div>
   
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="inteligenciaSocial" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1272,8 +1415,14 @@
           </div>
         </div>
   
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)" >
-          <div class="portfolio-item" style="height: 120px;">
+      </div>
+      <!--/ 3º row -->
+
+      <!-- 4º row -->
+      <div id="justica" hidden="true">
+
+        <div class="col-3 col-md-3 col-lg-12" id="justo" draggable="true" ondragstart="drag(event)" >
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1282,8 +1431,8 @@
             <img class="img-fluid" src="img/Justiça/Justo.png" alt="">
           </div>
         </div>
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="lideranca" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1292,44 +1441,38 @@
             <img class="img-fluid" src="img/Justiça/Liderança.png" alt="">
           </div>
         </div>
-        
-      </div>
-      <!--/1º row-->
-
-      <!-- 2º row -->
-      <div class="row col-lg-12 justify-content-between">
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)" >
-          <div class="portfolio-item" style="height: 120px;">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
+  
+          <div class="col-3 col-md-3 col-lg-12" id="responsabilidadeSocial" draggable="true" ondragstart="drag(event)" >
+            <div class="portfolio-item" >
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white">
+                  <p> Arrastar</p>
+                </div>
               </div>
+              <img class="img-fluid" src="img/Justiça/ResponsabilidadeSocial.png" alt="">
             </div>
-            <img class="img-fluid" src="img/Justiça/ResponsabilidadeSocial.png" alt="">
+          </div>
+  
+          <div class="col-3 col-md-3 col-lg-12">
+            <div class="portfolio-item"  id="trabalhoEmEquipe" draggable="true" ondragstart="drag(event)">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                <div class="portfolio-item-caption-content text-center text-white">
+                  <p> Arrastar</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/Justiça/TrabalhoEmEquipe.png" alt="">
+            </div>
           </div>
         </div>
+            
+      
+      <!--/ 4º row -->
 
-        <!-- Our drop Area      
-        <div class="col-lg-8 footer " id="dragable" ondrop="drop(event)" style="height: 80px;" ondragover="allowDrop(event)"></div>-->
-        <!--/ Our drop Area-->
+      <!-- 5º row -->
+      <div id="temperanca" hidden="true">
 
-        <div class="col-3 col-md-3 col-lg-1">
-          <div class="portfolio-item" style="height: 120px;" id="drag1" draggable="true" ondragstart="drag(event)">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/Justiça/TrabalhoEmEquipe.png" alt="">
-          </div>
-        </div>
-      </div>
-      <!--/ 2º row -->
-
-      <!-- 3º row -->
-      <div class="row col-lg-12 justify-content-between">
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)" >
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="autoControle" draggable="true" ondragstart="drag(event)" >
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1339,8 +1482,8 @@
           </div>
         </div>
 
-        <div class="col-3 col-md-3 col-lg-1">
-          <div class="portfolio-item" style="height: 120px;" id="drag1" draggable="true" ondragstart="drag(event)">
+        <div class="col-3 col-md-3 col-lg-12" id="humildade" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1349,13 +1492,9 @@
             <img class="img-fluid" src="img/Temperança/Humildade.png" alt="">
           </div>
         </div>
-      </div>
-      <!--/ 3º row -->
-
-      <!-- 4º row -->
-      <div class="row col-lg-12 justify-content-between">
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)" >
-          <div class="portfolio-item" style="height: 120px;">
+        
+        <div class="col-3 col-md-3 col-lg-12" id="perdao" draggable="true" ondragstart="drag(event)" >
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1365,8 +1504,8 @@
           </div>
         </div>
 
-        <div class="col-3 col-md-3 col-lg-1">
-          <div class="portfolio-item" style="height: 120px;" id="drag1" draggable="true" ondragstart="drag(event)">
+        <div class="col-3 col-md-3 col-lg-12" id="prudencia" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item"  >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1376,12 +1515,16 @@
           </div>
         </div>
       </div>
-      <!--/ 4º row -->
+        
+      <!--/ 5º row -->
 
-      <!-- 5º row -->
-      <div class="row col-lg-12 justify-content-between">
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)" >
-          <div class="portfolio-item" style="height: 120px;">
+      <!-- 6º row -->
+      
+      <div  id="transcedencia" hidden="true">
+
+
+        <div class="col-3 col-md-3 col-lg-12" id="apreciacaoPeloBelo" draggable="true" ondragstart="drag(event)" >
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1391,8 +1534,8 @@
           </div>
         </div>
 
-        <div class="col-3 col-md-3 col-lg-1">
-          <div class="portfolio-item" style="height: 120px;" id="drag1" draggable="true" ondragstart="drag(event)">
+        <div class="col-3 col-md-3 col-lg-12" id="espiritualidade" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item"  >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1401,15 +1544,9 @@
             <img class="img-fluid" src="img/Transcendencia/Espiritualidade.png" alt="">
           </div>
         </div>
-      </div>
-      <!--/ 5º row -->
 
-      <!-- 6º row -->
-      
-      <div class="row">
-
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="gratidao" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1419,8 +1556,8 @@
           </div>
         </div>
   
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="humor" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1430,8 +1567,8 @@
           </div>
         </div>
   
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
+        <div class="col-3 col-md-3 col-lg-12" id="otimismo" draggable="true" ondragstart="drag(event)">
+          <div class="portfolio-item" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <p> Arrastar</p>
@@ -1441,109 +1578,11 @@
           </div>
         </div>
   
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/Sabedoria/Perspectiva.png" alt="">
-          </div>
-        </div>
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/Sabedoria/sabedoria.png" alt="">
-          </div>
-        </div>
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/Nicolas.png" alt="">
-          </div>
-        </div>
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/Nicolas.png" alt="">
-          </div>
-        </div>
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/Nicolas.png" alt="">
-          </div>
-        </div>
-  
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/Nicolas.png" alt="">
-          </div>
-        </div>
-  
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/Nicolas.png" alt="">
-          </div>
-        </div>
-  
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)" >
-          <div class="portfolio-item" style="height: 120px;">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/Nicolas.png" alt="">
-          </div>
-        </div>
-        <div class="col-3 col-md-3 col-lg-1" id="drag1" draggable="true" ondragstart="drag(event)">
-          <div class="portfolio-item" style="height: 120px;">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <p> Arrastar</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/Nicolas.png" alt="">
-          </div>
-        </div>
-        
       </div>
       <!--/ 6º row -->
     
       </div>    
     </div>
-
-    
-
-
   </section>
 
   <!-- Footer -->
@@ -1609,6 +1648,12 @@
   </script>
 
   <script>
+
+    let countOne = 0;
+    let countTwo = 0;
+    let countThree = 0;
+
+
     function allowDrop(ev) {
       ev.preventDefault();
     }
@@ -1618,12 +1663,79 @@
     }
 
     function drop(ev) {
-      ev.preventDefault();
-      var data = ev.dataTransfer.getData("text");
-      ev.target.appendChild(document.getElementById(data));
+      
+      if(searchWhatDragableIs(ev.srcElement.id) != false){
+
+        ev.preventDefault();
+        let data = ev.dataTransfer.getData("text");    
+        let highlightImage = document.getElementById(data).getElementsByTagName('img');
+        console.log(highlightImage);
+        highlightImage[0].style.height = '360px';
+        highlightImage[0].style.width = '360px';
+
+        console.log(highlightImage);
+        ev.target.appendChild(document.getElementById(data));
+      }
     }
+
+    function searchWhatDragableIs(id){
+
+      if(id == 'dragableOne' && countOne < 1){
+        countOne++;
+        return true;
+
+      }
+      if(id == 'dragableTwo' && countTwo <1){
+        countTwo++;
+        return true;
+
+      }
+      if(id == 'dragableThree' && countThree < 1){
+        countThree++;
+        return true;
+
+      }
+      else{
+        return false;
+      }
+
+    }
+
   </script>
 
+<script>
+  function MostrarPersonalidade(id) {
+    var div = document.getElementById(id);
+    div.hidden = false;
+  }
+
+  function MostrarTodasPersonalidadeDeUmaArea(id) {
+    var div = document.getElementById(id);
+    div.hidden = false;
+  }
+
+  function EsconderPersonalidade() {
+    var div = document.getElementById('criatividade');
+    div.hidden = true;
+  }
+  function EsconderTodasPersonalidade() {
+    var div = document.getElementById('criatividade');
+    div.hidden = true;
+  }
+
+  function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
 
 </body>
 
